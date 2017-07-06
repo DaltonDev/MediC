@@ -9,11 +9,11 @@ define([], function(){
     return template;
   }
 
-  function appendCars(cars){
+  function appendCars(meds){
     document.getElementById('first-load').innerHTML = "";
     var cardHTML = "";
-    for(var i = 0; i < cars.length; i++){
-      cardHTML += generateCarCard(cars[i]);
+    for(var i = 0; i < meds.length; i++){
+      cardHTML += generateCarCard(meds[i]);
     }
     document.querySelector('.mdl-grid').insertAdjacentHTML('beforeend', cardHTML);
     //fix for ie

@@ -34,8 +34,8 @@ define(['./template.js', './clientStorage.js'], function(template, clientStorage
     }
 
     function loadMore(){
-      clientStorage.getCars().then(function(cars){
-        template.appendCars(cars);
+      clientStorage.getCars().then(function(meds){
+        template.appendCars(meds);
       });
     }
 

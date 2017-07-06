@@ -1,5 +1,5 @@
 
-<html><head></head><body cz-shortcut-listen="true"><div id="car-page" style="width:100%;height:100%;background-color:rgba(225,225,225,0.8);position:fixed;top:0;left:0;display:inline-block;bottom:0;-webkit-overflow-scrolling: touch;overflow-y:scroll;z-index:100000" onclick="document.querySelector('#car-page').parentNode.removeChild(document.querySelector('#car-page'));">
+<div id="car-page" style="width:100%;height:100%;background-color:rgba(225,225,225,0.8);position:fixed;top:0;left:0;display:inline-block;bottom:0;-webkit-overflow-scrolling: touch;overflow-y:scroll;z-index:100000" onclick="document.querySelector('#car-page').parentNode.removeChild(document.querySelector('#car-page'));">
 <div style="width:70%;min-width:270px;background-color:#ffffff;margin:15px auto;padding:15px;position:relative;" class="mdl-shadow--6dp">
 <button style="position:absolute; right: 16px; top:16px;" class="mdl-button mdl-js-button mdl-js-ripple-effect" type="button">X</button>
 <div class="mdl-grid" style="margin:0">
@@ -62,4 +62,4 @@
 	}
 }
 </style>
-</div></body></html>
+</div>
