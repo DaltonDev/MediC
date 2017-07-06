@@ -1,7 +1,9 @@
 define(['./template.js', './clientStorage.js'], function(template, clientStorage){
-    var apiUrlPath = 'https://bstavroulakis.com/pluralsight/courses/progressive-web-apps/service/';
-    var apiUrlLatest = apiUrlPath + 'latest-deals.php';
-    var apiUrlCar = apiUrlPath + 'car.php?carId=';
+    //var apiUrlPath = 'https://bstavroulakis.com/pluralsight/courses/progressive-web-apps/service/';
+    //var apiUrlLatest = apiUrlPath + 'latest-deals.php';
+    var apiUrlPath = 'https://medic-app.peter-lundgren.se/data/';
+    var apiUrlLatest = apiUrlPath + 'meds.php';
+    var apiUrlCar = apiUrlPath + 'med.php?carId=';
 
     function loadMoreRequest(){
       fetchPromise().then(function(status){
@@ -48,7 +50,7 @@ define(['./template.js', './clientStorage.js'], function(template, clientStorage
         })
     }
 
-//Cache car details 
+//Cache car details
     function preCacheDetailsPage(car){
       if('serviceWorker' in navigator){
         var carDetailsUrl = apiUrlCar + car.value.details_id;
